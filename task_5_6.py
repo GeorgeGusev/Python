@@ -11,4 +11,4 @@ for j in range(len(lst)-2):
         count=0
 if lst[-1] > lst[-2] > lst[-3]:
     result+=1
-print(result) 
+print(result)
