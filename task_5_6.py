@@ -1,4 +1,4 @@
-rom random import randint as rint
+from random import randint as rint
 lst = [rint(0, 20) for el in range(40)]
 print(lst)
 result=0

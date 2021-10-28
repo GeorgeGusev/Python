@@ -1,9 +1,25 @@
 from random import randint as rint
-import numpy
+n=int(input('Введите число n: '))
+m=int(input('Введите число m: '))
+i=0
+maxls=[]
+diag=[]
+matr=[[rint(0,20) for x in range (m)] for y in range(n)]
+print(matr)
+for y in matr:
+     maxls.append(max(y))
+print(maxls)
+for y in matr:
+    for x in matr:
+       if i in range(len(matr)):
+           diag.append(x[i])
+       i+=1
+print(diag)
+i=0
+for y in matr:
+    for x in matr:
+       if i in range(len(matr)):
+          x[i]=maxls[i]
+       i+=1
 
-n = int(input('Ввести размер матрицы: '))
-matrix = numpy.rint(1, 100, size=(n, n))
-print('Старая матрица: ', matrix)
-for i in range(n):
-    matrix[i][i] = max(matrix[i])
-print('Новая матрица: ', matrix)
+print(matr)
