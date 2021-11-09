@@ -1,5 +1,0 @@
-line = input('Строка обработки: ')
-spisok = line.split(' ')
-spisok = list(reversed(spisok))
-line_new = ' '.join(spisok)
-print(line_new)
